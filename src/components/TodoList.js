@@ -1,0 +1,32 @@
+import React from 'react';
+import Todo from './Todo';
+
+const TodoList = ({ todos, setTodos, filteredTodos }) => {
+
+    return(
+        <div className="todo-container">
+            <ul  className="todo-list">
+            
+            {
+                filteredTodos.map(todo => (
+
+                    <Todo 
+                    setTodos={setTodos} 
+                    todos={todos} 
+                    key={todo.id} 
+                    todo={todo}
+                    text={todo.text} />
+
+                )) }
+
+            </ul>
+        </div>
+
+    );
+}
+
+export default TodoList;
+
+
+//Here we will get all the piece of state and render it here.
+//now for each to do in the map we will render out todo component.

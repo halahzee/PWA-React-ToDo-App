@@ -1,0 +1,30 @@
+{"short_name": "PWA App",
+  "name": "PWA To Do List",
+  "orientation":"portrait-primary",
+
+  "icons":
+  [
+     {
+      "src": "logoIcon.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "maskable"
+  },
+     {
+      "src": "images/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+  },
+     {
+      "src": "images/icon-48x48.png",
+      "type": "image/png",
+      "sizes": "48x48",
+      "purpose": "any"
+  }
+      ],
+      "start_url": ".",
+      "display": "standalone",
+      "theme_color": "#000000",
+      "background_color": "#ffffff"
+  }
